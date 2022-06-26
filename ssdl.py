@@ -7,7 +7,7 @@ path = str(Path.home())
 ssdlp = path + "\\pyscoresaberapplication.json"
 
 
-hash = input("Paste the map hash from scoresaber: ")
+hash = input("map hash: ")
 #get map id after reading hash, save map info to a temp file
 result = os.popen("curl https://api.beatsaver.com/maps/hash/" + hash).read()
 string = result
